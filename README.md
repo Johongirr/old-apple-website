@@ -2,7 +2,7 @@
 
 
 > ### Project part of Odin [curriculum](https://www.theodinproject.com/courses/html-and-css/lessons/building-with-backgrounds-and-gradients)
-> ### Visit to [view]() a project
+> ### Visit to [view](https://johongirr.github.io/old-apple-website/) a project
 
 ## Built with
  * HTML5
