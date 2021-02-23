@@ -1,0 +1,204 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* css variables */
+:root {
+    --primary-color: #08c;
+    --secondary-color: #6e6e6e;
+    --white: #fff;
+}
+/* general styles */
+body {
+    font-family: Lato, Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+}
+.container__page {
+    max-width: 95%;
+    margin: 0 auto;
+}
+a,
+i,
+address {
+    display: inline-block;
+}
+a {
+    transition: all 250ms ease-out;
+}
+address {
+    font-style: normal;
+}
+li {
+    list-style: none;
+}
+input {
+    border: none;
+}
+img {
+    width: 100%;
+}
+
+/* typography */
+.heading-primary {
+    font-size: clamp(1.6rem, calc(5vw + 1rem), 3.5rem);
+    font-weight: 100;
+    margin: 5px 0 9px 0;
+}
+.heading-secondary {
+    font-size: clamp(1.2rem, calc(2vw +1rem), 1.7rem);
+}
+
+ 
+/* hero section of the web page */
+.header {
+    background: url("https://web.archive.org/web/20140301004302im_/http://images.apple.com/v/home/as/images/your_verse_hero.jpg") 50% 100% no-repeat;
+    background-size: cover;
+    height: 510px;
+}
+.header a {
+    text-decoration: none;
+}
+.header .header__text-box {
+    width: 95%;
+    max-width: 800px;
+    margin: 6rem auto 0 auto;
+    text-align: center;
+
+}
+.header .header__text-box a {
+    color: var(--white);
+}
+
+
+.header .header__link {
+    font-size: 1.5rem;
+    margin-top: .8rem;
+}
+.header .header__link:hover {
+    text-decoration: underline;
+}
+
+
+    /* main navigation of the web page */
+.header .header__nav {
+    position: relative;
+    top: 4.5rem;
+    max-width: 850px;
+    margin: 0 auto 4rem auto;
+}
+.nav {
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(rgba(0, 0, 0, .2)), color-stop(0.05, rgba(0, 0, 0, 0)), color-stop(0.97, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, .45))), -webkit-gradient(linear, 0 0, 100% 0, from(rgba(0, 0, 0, .2)), color-stop(0.002, rgba(0, 0, 0, 0)), color-stop(0.998, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, .2))), url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAA9QAAAAkCAMAAABfcIIyAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAHVQTFRFAAAA%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F5YtmQAAAACd0Uk5TAAECAwQFBgcICQoLDA0ODxAREhMUFRYXGBkaGxwdHh8gISIjJCUmZiD6WAAAAdlJREFUeF7t3btuFEEQheFzunotGYkIERA4spn3fyeHiAgEEtsXB82s2eEJavR%2F0Wjyo75XWfHpw4MkSXNqCkA2lr2%2B%2Fvz63n15qpI0x5yTSAM52XaxJLVXf%2FkoaY6xQk2sgXy8Ql2KJf3wS5HG6HMMQg3kZNkuxVGKNLxJo48%2BxhxTpBrIx7JcXEqUKJI3zd77CjWLaiAle4U6Iixv6q33MfocTL%2BBlCy7OEqJqCFvs%2FV2m3%2BTaiAd6zb7rlHtrbc1VA%2Bm30BSa%2B%2B7RNSo4a21thbVTL%2BBnCy7rCV1rdXbtbXW%2B%2Bh%2Ft78BZLM2v6NE1Fov%2FrpC3Zl%2BA2l5H6lrrRe%2FXNu%2BqCbUQE57qGvsoW5t9D4H028gJculOKLUWuvFz%2B16O9NipAZSsm8nWpfq53ZlTQ3k9s%2BamlADZ0CogZMh1MDJEGrgZAg1cDL%2Fh5ojLSC1%2ByMtLp8A2R0un3BNFEjv%2FpooDzqA9O4fdPD0Esju8PSSIglAdsciCZQzArI7lDOat30yCg8CGe2FB1eovZcI7oMSwUBSq0TwWlQHxfyBEzgW86ftDpDase0ODfKA7A4N8mhlC2R318r2px%2BeQqLpPJDae9P5%2FmrVz491%2FWekBlKy7PXVfn9rb9xXsMD2wdOcAAAAAElFTkSuQmCC) no-repeat 50% 50%, -webkit-gradient(linear, 0 100%, 0 0, from(#666), color-stop(0.5, #5e5e5e), color-stop(0.51, #707070), to(#808080));
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+}
+.nav .nav__list {
+    display: flex;
+    align-items: center;
+}
+.nav .nav__list > * {
+    flex: 1 1 100%;
+    border-right: 1px solid #666;
+}
+.nav .nav__item {
+    padding: .2rem 0;
+    transition: all 250ms ease-out;
+}
+.nav .nav__item:not(.inactive):hover {
+    background-color: rgba(0, 0, 0, .2);
+}
+.nav .nav__link, .form__icon {
+    color: var(--white);
+}
+ 
+
+
+
+
+    /* search form for iphone products */
+.form {
+    min-width: 100px;
+    display: flex;
+    align-items: center;
+    margin: 0  .8rem;
+    padding: 2px;
+    border: 1px solid rgba(0, 0, 0, .2);
+    border-radius: 15px;
+}
+
+
+.form .form__icon {
+    font-size: .75rem;
+    margin-left: 5px;
+}
+.form .form__input {
+    background-color: transparent;
+    display: block;
+    width: 100%;
+}
+.form__input:focus {
+    outline: none;
+    background: #fff;
+}
+ 
+
+/* gallery which is images of iphone products */
+.main__gallery {
+    margin-top: 2px;
+}
+.gallery .gallery__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2px;
+}
+
+
+/* footer */
+.page__footer {
+    width: 90%;
+    max-width: 960px;
+    margin: 1.5rem auto 1.5rem auto;
+}
+.footer {
+    font-size: .65rem;
+    color: var(--secondary-color);
+}
+.footer .footer__container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.footer .footer__list-container {
+    margin-left: 1.5rem;
+}
+.footer .footer__list {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.footer .footer__list .footer__item:not(:last-child) {
+    padding-right: 3px;
+}
+.footer .footer__link {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+.footer .footer__link:hover {
+    text-decoration: underline;
+}
+
+.footer .footer__copyright {
+    margin-top: .8rem;
+}
+.footer .copyright {
+    font-size: inherit;
+}
+
+@media (max-width: 650px){
+    .footer .footer__list {
+        margin-top: 1rem;
+        margin-left: -1.6rem;
+    }
+}
